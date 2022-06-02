@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.4.0-pre.2"
+    "react-router-dom": "^6.4.0-pre.2",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
