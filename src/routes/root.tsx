@@ -72,7 +72,7 @@ type Data = z.infer<typeof loaderSchema>;
 
 export const loader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url);
-  const query = url.searchParams.get('query');
+  const query = url.searchParams.get('query') || '';
 
   const res = await fetch('https://graphql.country/graphql', {
     method: 'POST',
