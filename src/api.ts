@@ -47,7 +47,11 @@ export const searchRepos = (query: string) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ variables: { query }, query: gql }),
-  }).then((res) => {
-    return res.json() as Promise<ApiResponse<Repository>>;
-  });
+  })
+    .then((res) => {
+      return res.json() as Promise<ApiResponse<Repository>>;
+    })
+    .then((res) => {
+      return res.data.search.nodes;
+    });
 };

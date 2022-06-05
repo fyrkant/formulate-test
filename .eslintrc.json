@@ -12,7 +12,9 @@
         "printWidth": 120
       }
     ],
-    "arrow-body-style": ["error", "always"]
+    "arrow-body-style": ["error", "always"],
+    "no-void": "off",
+    "@typescript-eslint/no-use-before-define": "off"
   },
   "parserOptions": {}
 }
